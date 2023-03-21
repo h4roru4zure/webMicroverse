@@ -98,3 +98,66 @@ header {
     font-size: 0.9em;
     color: #444;
   }
+
+  /** Global class **/ 
+
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid {
+    display: flex;
+  }
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .logo {
+    width: 60vw;
+  }
+  
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+
+  #head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+  }
+  
+  #head-container > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  
+  #head-container input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+  #head-container input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+  }
+  
+  #head-container input[type='submit']:hover {
+    background-color: orange;
+    transition: background-color 1s;
+  }
