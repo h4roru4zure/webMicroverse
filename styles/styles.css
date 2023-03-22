@@ -1,4 +1,7 @@
-header {
+  
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+  header {
     position: fixed;
     top: 0;
     min-height: 75px;
@@ -6,7 +9,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:#eee;
+    background-color:#fcbe2d;
   }
   
   @media (max-width: 600px) {
@@ -75,6 +78,10 @@ header {
     }
   }
   
+  body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
   
   footer {
     margin-top: 30px;
@@ -99,16 +106,22 @@ header {
     color: #444;
   }
 
-  /** Global class **/ 
+  #page-wrapper {
+    position: relative;
+  }
+
+  /********* Global class ***********/ 
 
   .container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
   }
+
   .grid {
     display: flex;
   }
+
   @media (max-width: 600px) {
     header {
       flex-wrap: wrap;
@@ -162,6 +175,52 @@ header {
     transition: background-color 1s;
   }
 
+  @media (max-width: 650px) {
+    #head-container {
+      margin-top: 120px;
+    }
+  }
+
+  
+  #features {
+    margin-top: 30px;
+  }
+  
+  #features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+  }
+  
+  @media (max-width: 550px) {
+    #features .icon {
+      display: none;
+    }
+  }
+
+  #features .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 550px) {
+    #features .description {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+
+  
   #how-it-works {
     margin-top: 50px;
     display: flex;
@@ -179,3 +238,79 @@ header {
     flex-direction: row;
     justify-content: center;
   }
+
+  /****/
+
+  
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  text-decoration-style: dotted;
+  text-indent: 5px;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
