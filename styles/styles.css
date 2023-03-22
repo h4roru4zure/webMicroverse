@@ -128,7 +128,7 @@ nav > ul {
   }
 }
 
-#hero {
+#head-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,18 +138,18 @@ nav > ul {
   margin-top: 50px;
 }
 
-#hero > h2 {
+#head-container> h2 {
   margin-bottom: 20px;
   word-wrap: break-word;
 }
 
-#hero input[type='email'] {
+#head-container input[type='email'] {
   max-width: 275px;
   width: 100%;
   padding: 5px;
 }
 
-#hero input[type='submit'] {
+#head-container input[type='submit'] {
   max-width: 150px;
   width: 100%;
   height: 30px;
@@ -158,13 +158,13 @@ nav > ul {
   background-color: #5e9245;
 }
 
-#hero input[type='submit']:hover {
+#head-container input[type='submit']:hover {
   background-color: #5e9245;
   transition: background-color 1s;
 }
 
 @media (max-width: 650px) {
-  #hero {
+  #head-container {
     margin-top: 120px;
   }
 }
@@ -188,7 +188,7 @@ nav > ul {
   }
 }
 
-#features .desc {
+#features .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,7 +198,7 @@ nav > ul {
 }
 
 @media (max-width: 550px) {
-  #features .desc {
+  #features .description {
     width: 100%;
     text-align: center;
     padding: 0;
